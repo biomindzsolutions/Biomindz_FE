@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.9);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Logo theme: Teal (primary) + Lime (accent) */
+  --brand-primary: #23BEDD;
+  --brand-accent: #B3DA40;
+}
+
+/* Professional Typography Improvements */
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Professional selection color */
+::selection {
+  background-color: rgba(35, 190, 221, 0.3);
+  color: #116F78;
+}
+
+/* Better focus states */
+*:focus {
+  outline: 2px solid rgba(35, 190, 221, 0.5);
+  outline-offset: 2px;
+}
