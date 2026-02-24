@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import type { ServerResponse } from 'http';
 
+// For GitHub Pages: build with BASE_URL=/Biomindz_FE/ (e.g. npm run build:gh)
+const base = process.env.BASE_URL || '/';
+
 export default defineConfig({
+  base,
   plugins: [react()],
   resolve: {
     alias: {

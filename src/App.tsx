@@ -74,10 +74,14 @@ const AppFrame = () => {
   )
 }
 
+// Basename for GitHub Pages (e.g. /Biomindz_FE); empty when base is /
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 const App = () => {
   return (
     <HelmetProvider>
       <Router
+        basename={basename}
         future={{
           v7_startTransition: true,
           v7_relativeSplatPath: true,
